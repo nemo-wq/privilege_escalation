@@ -35,7 +35,7 @@ Check if your awscli and configuration is working properly by the following step
 
   * Check attached policy using the brucon1 user profile (note the `--profile brucon1` parameter):
 
-    `aws iam list-attached-user-policies --user-name brucon1 --profile brucon1`
+    `aws iam get-user --profile brucon1`
 
   * Detach Managed Policy:
 
