@@ -87,10 +87,10 @@ aws iam create-access-key --user-name brucon2
 aws configure --profile brucon2
 ```
 
-1. Attach policy4 and set as default
+1. Attach policy4
 ```
 aws iam create-policy --policy-name brucon-policy2 --policy-document file://policy4.txt
-aws iam attach-user-policy --user-name brucon2 --policy-arn arn:aws:iam::<your-account-number>:policy/brucon-policy2 --set-as-default
+aws iam attach-user-policy --user-name brucon2 --policy-arn arn:aws:iam::<your-account-number>:policy/brucon-policy2
 ```
 
 1. Attempt to gain access to an admin account in your IAM store
