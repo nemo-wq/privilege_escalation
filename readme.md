@@ -33,15 +33,19 @@ Check if your awscli and configuration is working properly by the following step
 
     `aws iam attach-user-policy --user-name brucon1 --policy-arn arn:aws:iam::aws:policy/SecurityAudit`
 
-  * Check attached policy using the brucon1 user profile (note the `--profile brucon1` parameter):
+  * Check that the new profile using the brucon1 user profile (note the `--profile brucon1` parameter):
 
     `aws iam get-user --profile brucon1`
+  
+  * Verify Attached Policies as the default admin user:
+
+    `aws iam list-attached-user-policies --user-name brucon1`
 
   * Detach Managed Policy:
 
     `aws iam detach-user-policy --user-name brucon1 --policy-arn arn:aws:iam::aws:policy/SecurityAudit`
 
-  * Verify Attached Policies as the default admin user:
+  * Verify Attached Policies again as the default admin user:
 
     `aws iam list-attached-user-policies --user-name brucon1`
 
