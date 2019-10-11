@@ -5,7 +5,8 @@
             "Effect": "Allow",
             "Action": [
                 "iam:AttachGroupPolicy",
-                "iam:List*"
+                "iam:List*",
+                "iam:Get*"
             ],
             "Resource": "*"
         }

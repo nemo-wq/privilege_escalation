@@ -5,7 +5,8 @@
             "Effect": "Allow",
             "Action": [
                 "iam:CreatePolicyVersion",
-                "iam:List*"
+                "iam:List*",
+                "iam:Get*"
             ],
             "Resource": "*"
         }
